@@ -1,2 +1,79 @@
-# BoundaryAware-CellSeg
-A repository for implementing and refining bio-cell segmentation methods based on region growing with boundary constraints. The project integrates techniques like active contours, anisotropic diffusion (Perona-Malik), and gray-weighted distance transforms to ensure precise segmentation while preserving intercellular boundaries.
+# **BoundaryAware-CellSeg**  
+A Boundary-Aware Cell Segmentation Approach using Region Growing_
+
+## **Overview**  
+This project focuses on segmenting cells from microscopy images using a region-growing approach while maintaining cell boundaries. The method integrates:  
+- **Active Contours** (scikit-image)  
+- **Anisotropic Diffusion** (Perona-Malik filtering)  
+- **Gray-Weighted Distance Transform**  
+
+Given:  
+1. **Marker Image** – Small, manually or automatically detected regions within cells.  
+2. **Gene Expression Image** – Grayscale intensity map showing cell walls, nuclei, and intercellular spaces.  
+
+The goal is to expand the markers iteratively while ensuring that cells remain separated using intensity-based stopping criteria.
+
+---
+
+## **Installation**  
+Clone the repository and install dependencies:  
+```bash
+git clone https://github.com/STGK10/BoundaryAware-CellSeg.git  
+cd BoundaryAware-CellSeg
+pip install -r requirements.txt
+```
+
+### **Dependencies**  
+- Python 3.8+  
+- OpenCV  
+- NumPy  
+- scikit-image  
+- Matplotlib  
+
+---
+
+## **Usage**  
+### **1. Run Basic Segmentation**  
+Execute the main script to segment cells:  
+```bash
+python src/region_growing.py --input data/sample_image.png --markers data/markers.png --output results/segmented.png
+```
+
+### **2. Adjust Segmentation Criteria**  
+Modify `config.json` to experiment with different stopping conditions.  
+
+### **3. Visualize Intermediate Steps**  
+Run a Jupyter Notebook:  
+```bash
+jupyter notebook notebooks/SegmentationDemo.ipynb
+```
+
+---
+
+## **Project Structure**  
+📂 **BoundaryAware-CellSeg/**  
+ ├── 📂 **notebooks/** → Jupyter notebooks for testing segmentation  
+ ├── 📂 **src/** → Core algorithms  
+ │    ├── `region_growing.py` → Implements boundary-aware region growing  
+ │    ├── `active_contours.py` → Active contour-based refinement  
+ │    ├── `anisotropic_diffusion.py` → Preprocessing with Perona-Malik diffusion  
+ │    ├── `gray_weighted_distance.py` → Distance transform-based segmentation  
+ │    ├── `utils.py` → Helper functions  
+ ├── 📂 **data/** → Sample microscopy images & markers  
+ ├── 📂 **experiments/** → Logs, visualizations of results  
+ ├── 📂 **models/** → (Optional) Trained models for ML-based segmentation  
+ ├── 📜 `requirements.txt` → Dependency list  
+ ├── 📜 `README.md` → Project documentation  
+  
+
+---
+
+## **References**  
+- Yokoi, S., Toriwaki, J.-I. & Fukumura, T. (1981). "On Generalized Distance Transformation of Digitized Pictures." IEEE PAMI.  
+- Wang, Y., Wang, C. & Zhang, Z. (2018). "Segmentation of clustered cells in negative phase contrast images." Journal of Microscopy.  
+- Perona, P. & Malik, J. (1990). "Scale-space and edge detection using anisotropic diffusion." IEEE PAMI.  
+
+---
+
+## **License**  
+MIT License  
