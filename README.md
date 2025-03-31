@@ -36,16 +36,13 @@ pip install -r requirements.txt
 ### **1. Run Basic Segmentation**  
 Execute the main script to segment cells:  
 ```bash
-python src/region_growing.py --input data/sample_image.png --markers data/markers.png --output results/segmented.png
+python src/regrow.py --input data/image1.tif --markers data/image2.tif --output results/segmented.tif
 ```
 
-### **2. Adjust Segmentation Criteria**  
-Modify `config.json` to experiment with different stopping conditions.  
-
-### **3. Visualize Intermediate Steps**  
+### **2. Visualize Intermediate Steps**  
 Run a Jupyter Notebook:  
 ```bash
-jupyter notebook notebooks/SegmentationDemo.ipynb
+jupyter notebook notebooks/Segdemo.ipynb
 ```
 
 ---
@@ -54,10 +51,10 @@ jupyter notebook notebooks/SegmentationDemo.ipynb
 📂 **BoundaryAware-CellSeg/**  
  ├── 📂 **notebooks/** → Jupyter notebooks for testing segmentation  
  ├── 📂 **src/** → Core algorithms  
- │    ├── `region_growing.py` → Implements boundary-aware region growing  
- │    ├── `active_contours.py` → Active contour-based refinement  
- │    ├── `anisotropic_diffusion.py` → Preprocessing with Perona-Malik diffusion  
- │    ├── `gray_weighted_distance.py` → Distance transform-based segmentation  
+ │    ├── `regrow.py` → Implements boundary-aware region growing  
+ │    ├── `actcont.py` → Active contour-based refinement  
+ │    ├── `peronamalika.py` → Preprocessing with Perona-Malik diffusion  
+ │    ├── `gwdt.py` → Distance transform-based segmentation  
  │    ├── `utils.py` → Helper functions  
  ├── 📂 **data/** → Sample microscopy images & markers  
  ├── 📂 **experiments/** → Logs, visualizations of results  
