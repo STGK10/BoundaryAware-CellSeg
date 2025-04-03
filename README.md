@@ -68,7 +68,8 @@ jupyter notebook notebooks/Segdemo.ipynb
 ## **References**  
 - Yokoi, S., Toriwaki, J.-I. & Fukumura, T. (1981). "On Generalized Distance Transformation of Digitized Pictures." IEEE PAMI.  
 - Wang, Y., Wang, C. & Zhang, Z. (2018). "Segmentation of clustered cells in negative phase contrast images." Journal of Microscopy.  
-- Perona, P. & Malik, J. (1990). "Scale-space and edge detection using anisotropic diffusion." IEEE PAMI.  
+- Perona, P. & Malik, J. (1990). "Scale-space and edge detection using anisotropic diffusion." IEEE PAMI.
+- Active Contours Without Edges. Tony F. Chan, Member, IEEE, and Luminita A. Vese.
 
 ---
 
