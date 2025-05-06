@@ -61,7 +61,7 @@ jupyter notebook notebooks/combocellseg.ipynb
  │    ├── `peronamalika.ipynb` → Preprocessing with Perona-Malik diffusion  
  │    ├── `gwdt.ipynb` → Distance transform-based segmentation  
  │    ├── `combocellseg.ipynb` → Implementation of boundary-aware cells segmentation with visualization
- ├── 📂 **src/** → Core algorithms  
+ ├── 📂 **src/** → Core algorithms 
  │    ├── `combocellseg.py` → full Implementation of boundary-aware combining peronam-malik, gwdt and active contour for cells segmentation 
  ├── 📜 `requirements.txt` → Dependency list  
  ├── 📜 `README.md` → Project documentation  
