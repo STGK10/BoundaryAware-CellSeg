@@ -30,7 +30,7 @@ This project introduces **SIEMO's Stopping Criterion**, a powerful multi-conditi
    $R^{(k+1)} \cap P \neq \emptyset$  
    *(Prevents redundant segmentation by stopping if overlap with a known region is detected)*
 
-These conditions are **combined** as:
+These conditions are **combined** as the **SIEMO Convergence Rule (Stopping Criterion)** for image Segmentation:
 
 $$
 \left( \| \phi^{(k+1)} - \phi^{(k)} \|_2 < \delta \ \wedge\ \left| A^{(k+1)} - A^{(k)} \right| < \tau \right) \ \vee \ \left( R^{(k+1)} \cap P \neq \emptyset \right)
