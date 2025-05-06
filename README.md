@@ -14,7 +14,7 @@ It combines three techniques:
 * **Anisotropic Diffusion Filtering** (*Perona-Malik*)
 * **Gray-Weighted Distance Transform** (*GWDT*)
 
-**🧠 Key innovation: SIEMO's Stopping Criterion for Image Segmentation**
+**🧠 Key innovation: SIEMO's Stopping Criterion (or Convergence Rule) for Image Segmentation**
 
 This project introduces **SIEMO's Stopping Criterion**, a powerful multi-condition strategy to halt the segmentation process reliably:
 
