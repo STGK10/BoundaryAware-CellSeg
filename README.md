@@ -97,7 +97,7 @@ jupyter notebook notebooks/combocellseg.ipynb
 BoundaryAware-CellSeg/
 ├── data/               # Sample microscopy images and marker files
 ├── experiments/        # Logs and result visualizations
-├── models/             # (Optional) ML models for advanced segmentation
+├── models/             # ML models for advanced segmentation
 ├── notebooks/          # Interactive notebooks for exploring methods
 │   ├── activecontour.ipynb
 │   ├── peronamalika.ipynb
