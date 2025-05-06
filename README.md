@@ -28,7 +28,11 @@ pip install -r requirements.txt
 - OpenCV  
 - NumPy  
 - scikit-image  
-- Matplotlib  
+- Matplotlib
+- math
+- heapq
+- numba import jit, prange
+- os
 
 ---
 
@@ -36,29 +40,29 @@ pip install -r requirements.txt
 ### **1. Run Basic Segmentation**  
 Execute the main script to segment cells:  
 ```bash
-python src/regrow.py --input data/image1.tif --markers data/image2.tif --output results/segmented.tif
+python src/combocellseg.py --input data/--output results/segmented.tif
 ```
 
 ### **2. Visualize Intermediate Steps**  
 Run a Jupyter Notebook:  
 ```bash
-jupyter notebook notebooks/Segdemo.ipynb
+jupyter notebook notebooks/combocellseg.ipynb
 ```
 
 ---
 
 ## **Project Structure**  
 📂 **BoundaryAware-CellSeg/**  
- ├── 📂 **notebooks/** → Jupyter notebooks for testing segmentation  
- ├── 📂 **src/** → Core algorithms  
- │    ├── `regrow.py` → Implements boundary-aware region growing  
- │    ├── `actcont.py` → Active contour-based refinement  
- │    ├── `peronamalika.py` → Preprocessing with Perona-Malik diffusion  
- │    ├── `gwdt.py` → Distance transform-based segmentation  
- │    ├── `utils.py` → Helper functions  
- ├── 📂 **data/** → Sample microscopy images & markers  
- ├── 📂 **experiments/** → Logs, visualizations of results  
+ ├── 📂 **data/** → Sample microscopy images & markers 
+ ├── 📂 **experiments/** → Logs, visualizations of results 
  ├── 📂 **models/** → (Optional) Trained models for ML-based segmentation  
+ ├── 📂 **notebooks/** → Jupyter notebooks for testing segmentation  
+ │    ├── `activecontour.ipynb` → Active contour-based refinement  
+ │    ├── `peronamalika.ipynb` → Preprocessing with Perona-Malik diffusion  
+ │    ├── `gwdt.ipynb` → Distance transform-based segmentation  
+ │    ├── `combocellseg.ipynb` → Implementation of boundary-aware cells segmentation with visualization
+ ├── 📂 **src/** → Core algorithms  
+ │    ├── `combocellseg.py` → full Implementation of boundary-aware combining peronam-malik, gwdt and active contour for cells segmentation 
  ├── 📜 `requirements.txt` → Dependency list  
  ├── 📜 `README.md` → Project documentation  
   
