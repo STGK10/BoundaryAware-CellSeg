@@ -53,18 +53,18 @@ jupyter notebook notebooks/combocellseg.ipynb
 
 ## **Project Structure**  
 📂 **BoundaryAware-CellSeg/**  
- ├── 📂 **data/** → Sample microscopy images & markers 
- ├── 📂 **experiments/** → Logs, visualizations of results 
- ├── 📂 **models/** → (Optional) Trained models for ML-based segmentation  
- ├── 📂 **notebooks/** → Jupyter notebooks for testing segmentation  
- │    ├── `activecontour.ipynb` → Active contour-based refinement  
- │    ├── `peronamalika.ipynb` → Preprocessing with Perona-Malik diffusion  
- │    ├── `gwdt.ipynb` → Distance transform-based segmentation  
- │    ├── `combocellseg.ipynb` → Implementation of boundary-aware cells segmentation with visualization
- ├── 📂 **src/** → Core algorithms 
- │    ├── `combocellseg.py` → full Implementation of boundary-aware combining peronam-malik, gwdt and active contour for cells segmentation 
- ├── 📜 `requirements.txt` → Dependency list  
- ├── 📜 `README.md` → Project documentation  
+ ├── 📂 **data/** → Sample microscopy images & markers.
+ ├── 📂 **experiments/** → Logs, visualizations of results.
+ ├── 📂 **models/** → (Optional) Trained models for ML-based segmentation.
+ ├── 📂 **notebooks/** → Jupyter notebooks for testing segmentation.
+ │    ├── `activecontour.ipynb` → Active contour-based refinement. 
+ │    ├── `peronamalika.ipynb` → Preprocessing with Perona-Malik diffusion. 
+ │    ├── `gwdt.ipynb` → Distance transform-based segmentation.
+ │    ├── `combocellseg.ipynb` → Implementation of boundary-aware cells segmentation with visualization.
+ ├── 📂 **src/** → Core algorithms.
+ │    ├── `combocellseg.py` → full Implementation of boundary-aware combining peronam-malik, gwdt and active contour for cells segmentation.
+ ├── 📜 `requirements.txt` → Dependency list.
+ ├── 📜 `README.md` → Project documentation.
   
 
 ---
